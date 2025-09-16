@@ -1,0 +1,42 @@
+#login{
+    margin-left: 40%;
+    margin-top: 10%;
+    align-items: center;
+    border: 10px;
+    border-style: dashed;
+    display: inline-block;
+    border-radius: 5px;
+    width: 250px;
+    height:300px;
+    background-color: purple;
+    h2{text-align: center;
+    font-size: 30px;
+font-family: Lexend;}
+    
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+}
+#username{
+    border-style:none ;
+    margin-left: 15%;
+    background-color: aqua;
+    font-family: Lexend;
+     border-radius: 5px;
+}
+#password{
+    border-style:none ;
+    margin-left: 15%;
+      background-color: aqua;
+    font-family: Lexend;
+    border-radius: 5px;
+}
+
+body{background-color: grey;}
+#loginBtn{
+    margin-left: 40%;
+    border-radius: 5px;
+    font-family: Lexend;
+    border-style: none;
+}
+#result{text-align: center;
+    font-family: Lexend;
+}

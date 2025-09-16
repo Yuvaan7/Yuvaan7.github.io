@@ -1,0 +1,166 @@
+h2 {
+  text-align: center;
+  font-family: MyCustomFont;
+  font-style: italic;
+  color: white;
+  padding-top: 5px;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/Kugile_Demo.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.image {
+  max-width: 25%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  transition-property: all;
+  transition-duration: 4s;
+}
+
+#aboutme {
+  margin: 20px auto;
+  max-width: 1100px;
+  background-color: black;
+  padding: 20px;
+  display: flex;          /* FLEXBOX FIX */
+  align-items: center;    /* vertically center */
+  gap: 20px;              /* space between image and text */
+  transition: all 4s;
+} 
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  font-family: MyCustomFont;
+  color: white;
+  transition: all 3s;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 50px; }
+  .image { max-width: 40%; }
+  .image2 { max-width: 80%; height: auto; }
+  #hello { margin-left: 0; text-align: center; }
+  #aboutme { padding: 15px; flex-direction: column; text-align: center; }  /* mobile: stack vertically */
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 32px; }
+  .image { max-width: 60%; }
+  .image2 { max-width: 95%; height: auto; }
+  #hello { font-size: 20px; margin-left: 0; text-align: center; }
+  #aboutme { padding: 10px; flex-direction: column; text-align: center; }
+}
+
+#Main {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px; 
+  background-color: black;
+  transition: all 4s;
+  text-align: center;
+}
+
+#Main:hover {
+  background-color: palevioletred;
+}
+#Main:hover .image {
+  max-width: 50%;
+}
+#Main:active {
+  background-color: purple;
+}
+#Main:active .image {
+  max-width: 50%;
+}
+
+#hello {
+  font-family: MyCustomFont;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#hemanyadaga {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+#paragraph {
+  flex: 1;
+  margin: 0;
+  color: white;
+  line-height: 1.6;
+}
+
+body {
+  background-color: pink;
+}
+p {
+  color: white;
+}
+
+#button {
+  height: 25px;
+  width: 10px;
+  background-color: pink;
+  background-image: url(Screenshot\ 2025-09-01\ 193950.png); 
+  background-size: cover;
+}
+
+.fa-linkedin {
+  font-size: 48px; 
+  background-image: cover;
+}
+#aboutme:hover { background-color: palevioletred;
+  max-width: 1240px;
+ }
+#aboutme:active { background-color: blueviolet; }  
+
+#linkedin {
+  margin-left: 40%;
+  height: 30px;
+  width: 30px;
+  background-image: url("1656994883linkedin-logo-transparent.png");
+  background-color: pink;
+  background-size: cover;
+  border-color: #0A66C2;
+  border-radius: 10px;
+}
+
+#buttons {
+  font-family: MyCustomFont;
+  color: white;
+  transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  height: 100px;
+  margin-left: 1200px;
+  width: 200px;
+  background-color: black;
+  animation-name: pos;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+  ;
+  animation-iteration-count: infinite;
+}
+#buttons:hover {
+  height: 150px;
+  background-color: pink;
+
+}
+
+
+#buttons:hover h4 {
+  font-size: 15px; 
+  text-align: center;
+}
+#buttons:hover #linkedin {
+  height: 50px;
+  width: 50px;
+}
